@@ -1,4 +1,4 @@
-run_packages: install brain-games build publish package-install
+run_packages: install build publish package-install
 
 install:
 	poetry install
@@ -13,5 +13,6 @@ publish:
 	poetry publish --dry-run
 
 package-install:
-	python3 -m pip install --user dist/*.whl
-	#python3 -m pip install dist/*.whl start from virtual environment
+	#python3 -m pip install --user dist/*.whl
+	#start from virtual environment
+	python3 -m pip install dist/*.whl --force-reinstall
