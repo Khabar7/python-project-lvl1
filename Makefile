@@ -1,4 +1,4 @@
-run_packages: build publish package-install
+run_packages: install brain-games build publish package-install
 
 install:
 	poetry install
@@ -14,4 +14,4 @@ publish:
 
 package-install:
 	python3 -m pip install --user dist/*.whl
-
+	#python3 -m pip install dist/*.whl start from virtual environment
