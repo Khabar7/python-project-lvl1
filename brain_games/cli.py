@@ -14,3 +14,4 @@ def answer_for_even(number: int):
     print(f"Question: {number}")
     answer = prompt.string("Your answer: ")
     return answer.lower()
+
