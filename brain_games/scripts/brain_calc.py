@@ -1,16 +1,21 @@
 #!/usr/bin/env python
 import random
 
+import task as task
+
 from brain_games.cli import calc_game, welcome_user
 
 
 def main():
     name = welcome_user()
-    answer_calc = calc_game()
-    equally = random.randrange(100), random.choice(['win', 'lose', 'draw']), random.randrange(100)
-    task = str(equally)
+    operator = random.choice('+', '-', '*')
+    num1 = random.randint(1, 100)
+    num2 = random.randint(1,100)
+    task = {num1}, {operator}, {num2}
+    answer_calc = calc_game(task)
     counter = 0
     while counter != 3:
+        equally = (num1, operator, num2)
         if answer_calc == equally:
             print("Correct!")
             counter = counter + 1

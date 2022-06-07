@@ -15,7 +15,7 @@ def answer_for_even(number: int):
     return answer.lower()
 
 
-def calc_game(task: int):
+def calc_game(task):
     print('What is the result of the expression?')
     print(f"Question: {task}")
     answer_calc = prompt.string("Your answer: ")
