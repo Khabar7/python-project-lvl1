@@ -140,6 +140,14 @@ python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7"
 six = ">=1.5"
 
 [[package]]
+name = "question"
+version = "0.1"
+description = "UNKNOWN"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "rich"
 version = "9.13.0"
 description = "Render rich text, tables, progress bars, syntax highlighting, markdown and more to the terminal"
@@ -236,7 +244,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "e3917dce143766a4abebc7c4e0726df383879f3917588c85b8f5b5a693439ac5"
+content-hash = "797b7e3ddcb515962700bc19fa94e271b60b993c51f52505b5ebec4b62562a52"
 
 [metadata.files]
 click = [
@@ -346,6 +354,10 @@ pygments = [
 python-dateutil = [
     {file = "python-dateutil-2.8.2.tar.gz", hash = "sha256:0123cacc1627ae19ddf3c27a5de5bd67ee4586fbdd6440d9748f8abb483d3e86"},
     {file = "python_dateutil-2.8.2-py2.py3-none-any.whl", hash = "sha256:961d03dc3453ebbc59dbdea9e4e11c5651520a876d0f4db161e8674aae935da9"},
+]
+question = [
+    {file = "Question-0.1.win32.exe", hash = "sha256:bec7210631ad3d3efe5cc589fdf1335a62296cefee42eb5b6f8ff5126744a896"},
+    {file = "Question-0.1.zip", hash = "sha256:3c0265f95175b1e745ba01c49974103406f2ad50a8be902b1b16642340da8422"},
 ]
 rich = [
     {file = "rich-9.13.0-py3-none-any.whl", hash = "sha256:9004f6449c89abadf689dad6f92393e760b8c3a8a8c4ea6d8d474066307c0e66"},
