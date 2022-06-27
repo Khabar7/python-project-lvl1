@@ -34,3 +34,10 @@ def brain_progression(progression):
     print(f'Question: {progression}')
     answer = prompt.string("Your answer: ")
     return answer
+
+
+def brain_prime(number: int):
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+    print(f"Question: {number}")
+    answer = prompt.string("Your answer: ")
+    return answer.lower()
