@@ -22,3 +22,4 @@ def main():
             break
         if counter == 3:
             print(f"Congratulations, {name}!")
+

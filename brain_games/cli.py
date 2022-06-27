@@ -21,8 +21,15 @@ def calc_game(num1, operation, num2):
     answer = prompt.string("Your answer: ")
     return answer
 
+
 def gcd_game(num1, num2):
     print('Find the greatest common divisor of given numbers')
     print(f'Question: {num1} {num2}')
+    answer = prompt.string("Your answer: ")
+    return answer
+
+def brain_progression(progression):
+    print('What number is missing in the progression?')
+    print(f'Question: {progression}')
     answer = prompt.string("Your answer: ")
     return answer
