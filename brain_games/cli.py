@@ -28,6 +28,7 @@ def gcd_game(num1, num2):
     answer = prompt.string("Your answer: ")
     return answer
 
+
 def brain_progression(progression):
     print('What number is missing in the progression?')
     print(f'Question: {progression}')
