@@ -9,10 +9,14 @@ def main():
     counter = 0
     while counter != 3:
         random_number = random.randrange(100)
-        if random_number < 2 or not random_number % 2:
-            simple = "no"
-        else:
+        k = 0
+        for i in range(2, random_number // 2 + 1):
+            if random_number % i == 0:
+                k = k + 1
+        if k <= 0:
             simple = "yes"
+        else:
+            simple = "no"
         answer = brain_prime(random_number)
         if answer == simple:
             print("Correct!")
