@@ -19,7 +19,7 @@ def main():
             counter = counter + 1
         else:
             print(f"{answer} is wrong answer ;(. Correct answer was {is_even}. "
-                  f"Let's try again, {name}")
+                  f"Let's try again, {name}!")
             break
     if counter == 3:
         print(f"Congratulations, {name}!")
