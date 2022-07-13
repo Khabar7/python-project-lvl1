@@ -24,6 +24,6 @@ def engine(game=None):
         print(msg)
         if not res:
             print(f"Let's try again, {user_name}!")
-            exit()
+            return
         correct_answers += 1
     print(f'Congratulations, {user_name}!')
