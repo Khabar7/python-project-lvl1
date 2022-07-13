@@ -4,7 +4,6 @@ NUMBER_OF_ROUNDS = 3
 
 
 def engine(game=None):
-    print("Welcome to the Brain Games!")
     user_name = welcome_user()
     if game:
         print(game.DESCRIPTION + '\n')
