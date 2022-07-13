@@ -32,7 +32,7 @@ def engine(user_name, play):
     correct_answers = 0
     while correct_answers < NUMBER_OF_ROUNDS:
         question, correct_answer = play()
-        print(question)
+        print(f'Question: {question}')
         res, msg = check_answer(get_user_answer(), correct_answer)
         print(msg)
         if not res:
