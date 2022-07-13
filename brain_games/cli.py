@@ -1,13 +1,13 @@
 import prompt
 
 
-def welcome_user(description):
+def welcome_user(game):
     print("Welcome to the Brain Games!")
     user_name = get_user_name()
     greeting = f'Hello, {user_name}!\n'
     print(greeting)
-    if description:
-        print(description + '\n')
+    if game:
+        print(game.DESRIPTION + '\n')
     return user_name
 
 

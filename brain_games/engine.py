@@ -4,7 +4,7 @@ NUMBER_OF_ROUNDS = 3
 
 
 def engine(game=None):
-    user_name = welcome_user(game.DESCRIPTION)
+    user_name = welcome_user(game)
     correct_answers = 0
     while correct_answers < NUMBER_OF_ROUNDS:
         question, right = game.make_question()
