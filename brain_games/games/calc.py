@@ -1,7 +1,6 @@
 import operator
 from random import choice, randint
 
-
 DESCRIPTION = 'What is the result of the expression?'
 
 operations = {
@@ -9,6 +8,7 @@ operations = {
     '-': operator.sub,
     '*': operator.mul,
 }
+
 
 def make_question():
     num1 = randint(1, 100)
