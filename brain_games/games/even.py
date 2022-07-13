@@ -1,8 +1,8 @@
-from brain_games.engine import generate_number
+from random import randint
 
 DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".'
 
 
 def make_question():
-    number = generate_number()
+    number = randint(1, 100)
     return number, 'no' if number % 2 else 'yes'

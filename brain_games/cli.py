@@ -3,7 +3,7 @@ import prompt
 
 def welcome_user():
     user_name = get_user_name()
-    greeting = f'Hello, {user_name}!'
+    greeting = f'Hello, {user_name}!\n'
     print(greeting)
     return user_name
 
