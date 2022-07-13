@@ -1,6 +1,6 @@
 from random import randint
 
-from brain_games.cli import get_user_answer, get_user_name
+from brain_games.cli import get_user_answer, welcome_user
 
 NUMBER_OF_ROUNDS = 3
 
@@ -15,13 +15,6 @@ def check_answer(user_answer, correct_answer):
         return True, message
     message = "'{wrong}' is wrong answer ;(. Correct answer was '{correct}'."
     return False, message.format(wrong=user_answer, correct=correct_answer)
-
-
-def welcome_user():
-    user_name = get_user_name()
-    greeting = f'Hello, {user_name}!'
-    print(greeting)
-    return user_name
 
 
 def run(game=None):
