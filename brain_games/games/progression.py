@@ -15,4 +15,4 @@ def make_question():
     prog = make_progression()
     secret = choice(prog)
     answer, prog[secret] = prog[secret], '..'
-    return prog, answer
+    return ' '.join(prog), answer
