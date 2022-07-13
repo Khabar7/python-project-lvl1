@@ -5,12 +5,12 @@ NUMBER_OF_ROUNDS = 3
 
 def engine(game=None):
     print("Welcome to the Brain Games!")
+    user_name = welcome_user()
     if game:
         print(game.DESCRIPTION + '\n')
     else:
         return
     correct_answers = 0
-    user_name = welcome_user()
     while correct_answers < NUMBER_OF_ROUNDS:
         question, correct_answer = game.make_question()
         print(f'Question: {question}')
