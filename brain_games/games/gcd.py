@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 from brain_games.engine import generate_number
 
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'

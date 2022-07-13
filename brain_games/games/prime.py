@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 from brain_games.engine import generate_number
 
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
