@@ -7,6 +7,8 @@ def engine(game=None):
     user_name = welcome_user()
     if game:
         print(game.DESCRIPTION + '\n')
+    else:
+        return
     correct_answers = 0
     while correct_answers < NUMBER_OF_ROUNDS:
         question, correct_answer = game.make_question()
