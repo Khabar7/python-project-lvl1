@@ -12,14 +12,14 @@ def engine(game=None):
         return
     correct_answers = 0
     while correct_answers < NUMBER_OF_ROUNDS:
-        question, correct_answer = game.make_question()
+        question, right = game.make_question()
         print(f'Question: {question}')
-        user_answer = get_user_answer()
-        if user_answer == correct_answer:
+        answer = get_user_answer()
+        if answer == right:
             msg = 'Correct!'
             res = True
         else:
-            msg = f'{user_answer} is wrong answer ;(. Correct answer was {correct_answer}.'
+            msg = f'{answer} is wrong answer ;(. Correct answer was {right}.'
             res = False
         print(msg)
         if not res:
