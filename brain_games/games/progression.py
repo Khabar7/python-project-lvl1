@@ -1,4 +1,4 @@
-from random import choice, randint
+from random import randint
 
 DESCRIPTION = 'What number is missing in the progression?'
 
@@ -13,6 +13,6 @@ def make_progression():
 
 def make_question():
     prog = make_progression()
-    secret = choice(prog)
+    secret = randint(0, len(prog) - 1)
     answer, prog[secret] = prog[secret], '..'
-    return ' '.join(prog), answer
+    return prog, answer
