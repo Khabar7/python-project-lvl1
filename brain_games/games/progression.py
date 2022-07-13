@@ -15,4 +15,4 @@ def make_question():
     prog = make_progression()
     secret = randint(0, len(prog) - 1)
     answer, prog[secret] = prog[secret], '..'
-    return " ".join(prog), answer
+    return " ".join(str(x) for x in prog), answer
