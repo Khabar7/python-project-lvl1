@@ -14,7 +14,5 @@ def make_progression():
 def make_question():
     prog = make_progression()
     secret = choice(prog)
-    progression = ' '.join([
-        '..' if num == secret else str(num) for num in prog
-    ])
-    return progression, str(secret)
+    answer, prog[secret] = prog[secret], '..'
+    return prog, answer
