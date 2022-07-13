@@ -4,14 +4,14 @@ DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number):
-    if number < 2 or not number % 2:
+    counter = 0
+    for i in range(2, number // 2 + 1):
+        if number % i == 0:
+            counter = counter + 1
+    if counter <= 0:
+        return True
+    else:
         return False
-    counter = 3
-    while counter <= number // 2:
-        if not number % counter:
-            return False
-        counter += 2
-    return True
 
 
 def make_question():
