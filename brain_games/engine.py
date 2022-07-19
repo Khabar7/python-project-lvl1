@@ -1,10 +1,9 @@
-from brain_games.cli import get_user_answer, welcome_user
+from brain_games.cli import get_user_answer
 
 NUMBER_OF_ROUNDS = 3
 
 
-def engine(game=None):
-    user_name = welcome_user()
+def engine(user_name, game=None):
     if not game:
         return
     print(game.DESCRIPTION + '\n')

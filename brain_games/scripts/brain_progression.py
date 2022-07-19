@@ -1,10 +1,12 @@
 #!/usr/bin/env python
 from brain_games.engine import engine
 from brain_games.games import progression
+from brain_games.cli import welcome_user
 
 
 def main():
-    engine(progression)
+    user_name = welcome_user()
+    engine(user_name, progression)
 
 
 if __name__ == '__main__':
