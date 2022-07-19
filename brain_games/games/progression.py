@@ -1,18 +1,18 @@
-from random import randint
+from random import randint, randrange
 
 DESCRIPTION = 'What number is missing in the progression?'
 
 
 def make_progression():
-    initial_number = randint(1, 100)
-    delta = randint(1, 25)
+    start = randint(1, 100)
+    step = randint(1, 25)
     length = randint(5, 10)
-    maximum_number = (delta * length) + initial_number
-    return list(range(initial_number, maximum_number, delta))
+    stop = (step * length) + start
+    return list(range(start, stop, step))
 
 
 def get_question_and_answer():
-    question = make_progression()
-    secret = randint(0, len(question) - 1)
-    answer, question[secret] = question[secret], '..'
-    return " ".join(str(x) for x in question), str(answer)
+    question_progression = make_progression()
+    secret = randrange(0, len(question_progression))
+    answer, question_progression[secret] = question_progression[secret], '..'
+    return ' '.join(map(str, question_progression)), str(answer)
