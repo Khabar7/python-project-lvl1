@@ -1,15 +1,19 @@
+import math
 from random import randint
 
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(number):
-    counter = 3
-    for i in range(2, number // 2):
-        if number % counter == 0:
+    if number < 2:
+        return False
+    if number in [2, 3]:
+        return True
+    if number % 6 != 5 and number % 6 != 1:
+        return False
+    for i in range(5, int(math.sqrt(number)) + 1, 6):
+        if (number % i == 0) or (number % (i + 2) == 0):
             return False
-        counter += 2
-
     return True
 
 
