@@ -3,9 +3,7 @@ from brain_games.cli import get_user_answer
 NUMBER_OF_ROUNDS = 3
 
 
-def engine(user_name, game=None):
-    if not game:
-        return
+def engine(user_name, game):
     print(game.DESCRIPTION + '\n')
     correct_answers = 0
     while correct_answers < NUMBER_OF_ROUNDS:

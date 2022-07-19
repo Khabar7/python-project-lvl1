@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.2.1"
+version = "1.0.1"
 description = "This is my first project in which I wrote 5 logic games!"
 authors = ["khabar7 <khabarov.ilya7@yandex.ru>"]
 packages = [
