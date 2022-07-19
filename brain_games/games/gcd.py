@@ -3,12 +3,12 @@ from random import randint
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
-def make_question():
+def get_question_and_answer():
     num1 = randint(1, 100)
     num2 = randint(1, 100)
-    question = f'{num1} {num2}'
+    question_number = f'{num1} {num2}'
     answer = gcd(num1, num2)
-    return question, str(answer)
+    return question_number, str(answer)
 
 
 def gcd(num1, num2):

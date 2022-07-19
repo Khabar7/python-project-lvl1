@@ -10,10 +10,10 @@ operations = {
 }
 
 
-def make_question():
+def get_question_and_answer():
     num1 = randint(1, 100)
     num2 = randint(1, 100)
     operation = choice(list(operations.keys()))
-    question = f'{num1} {operation} {num2}'
+    question_number = f'{num1} {operation} {num2}'
     answer = str(operations[operation](num1, num2))
-    return question, answer
+    return question_number, answer

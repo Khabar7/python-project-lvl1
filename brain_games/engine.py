@@ -9,7 +9,7 @@ def engine(user_name, game=None):
     print(game.DESCRIPTION + '\n')
     correct_answers = 0
     while correct_answers < NUMBER_OF_ROUNDS:
-        question, right = game.make_question()
+        question, right = game.get_question_and_answer()
         print(f'Question: {question}')
         answer = get_user_answer()
         if answer == right:

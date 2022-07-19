@@ -11,8 +11,8 @@ def make_progression():
     return list(range(initial_number, maximum_number, delta))
 
 
-def make_question():
-    prog = make_progression()
-    secret = randint(0, len(prog) - 1)
-    answer, prog[secret] = prog[secret], '..'
-    return " ".join(str(x) for x in prog), str(answer)
+def get_question_and_answer():
+    question = make_progression()
+    secret = randint(0, len(question) - 1)
+    answer, question[secret] = question[secret], '..'
+    return " ".join(str(x) for x in question), str(answer)
